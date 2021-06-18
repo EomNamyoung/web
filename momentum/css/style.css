@@ -1,0 +1,120 @@
+.hidden{
+    display: none;
+}
+body,html{
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    
+    color: beige;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+html{
+    background-color: #2c3e50;
+}
+h1,
+h2,
+h3,
+h4,
+h5{
+    margin:0;
+}
+#login-form{
+    position: relative;
+    bottom:25px;
+}
+
+
+.clock{
+    margin-top: 50px;
+    font-size: 10em;
+    text-align: center;
+}
+
+input{
+    background: none;
+    appearance: none;
+    border: 0;
+    font-size: 30px;
+    color: white;
+    border-bottom: 3px solid white;
+    margin-top: 30px;
+
+}
+#login-form{
+    margin-top: 40px;
+}
+#login-form input::placeholder{
+    color: white;
+    opacity: 0.5;
+}
+
+#todo-form input::placeholder{
+    color: white;
+}
+
+
+#greeting{
+    margin-top: 50px;
+    font-size: 70px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+#todo-list{
+    top: 10px;
+    font-size: 30px;
+    list-style: none;
+}
+.todo_Button{
+    
+    cursor: pointer;
+}
+
+#quote{
+    position: absolute;
+    font-size: 20px;
+    bottom:25px;
+    left: 25px;
+    
+    
+}
+
+#weather{
+    position: absolute;
+    font-style: italic;
+    font-size: 20px;
+    
+    top:25px;
+    right: 25px;
+}
+
+
+
+
+@keyframes fadeIn {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+.bgImage{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    animation: fadeIn 0.5s linear;
+    
+}
